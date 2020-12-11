@@ -8,7 +8,7 @@ func main(height: Int32, width: Int32) {
                               right: Double(width - 1),
                               top: 0)
 
-  let points = ChaosGame.new(choice: 0).generatePoints()
+  let points = ChaosGame.new(choice: 14).generatePoints()
   let screenPoints = ScreenPoints(world: world,
                                   screenSpace: screenSpace,
                                   points: points)

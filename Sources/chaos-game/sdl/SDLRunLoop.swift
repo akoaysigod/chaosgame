@@ -32,8 +32,8 @@ final class SDLRunLoop {
         break
       }
 
-      switch event.key.keysym.sym {
-      case Int32(SDLK_ESCAPE):
+      switch Int32(event.key.keysym.sym) {
+      case Int32(SDLK_ESCAPE.rawValue):
       isRunning = false
       case _:
         break
